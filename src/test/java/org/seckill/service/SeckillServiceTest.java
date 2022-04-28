@@ -47,7 +47,7 @@ public class SeckillServiceTest {
 
     @Test
     public void exportSeckillUrl() {
-        long id=1000;
+        long id=1001;
         Exposer exposer=seckillService.exportSeckillUrl(id);
         //给exposer加一个toString方法方便打印
         logger.info("exposer={}",exposer);

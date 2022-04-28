@@ -15,7 +15,7 @@ public class RedisDao {
     //seckill.class类的字节码，通过反射拿到字节码的属性，RuntimeSchema基于class做一个模式，在创建对象时会根据模式来赋予相应的值
     private RuntimeSchema<seckill> schema =RuntimeSchema.createFrom(seckill.class);
 
-    private RedisDao(String ip,int port){
+    public RedisDao(String ip,int port){
         jedisPool =new JedisPool(ip,port);
     }
 
